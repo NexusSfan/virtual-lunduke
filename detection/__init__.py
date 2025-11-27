@@ -28,5 +28,9 @@ def get_detection_system():
         from . import apt
 
         return (apt.AptDetectionSystem, "apt")
-    # todo: implement pacman and dnf
+    if pacman_binary:
+        from . import pacman
+        
+        return(pacman.PacmanDetectionSystem, "pacman")
+    # todo: implement dnf
     return (binary.BinDetectionSystem, "bin")

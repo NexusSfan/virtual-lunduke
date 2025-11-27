@@ -4,9 +4,9 @@
     "Flatpak": ["flatpak"],
     "sudo-rs": ["sudo-rs"],
     "systemd": ["systemd"],
-    "KDE": ["kde-full"],
+    "KDE": ["plasma-meta"],
     "GNOME": ["gnome"],
-    "uutils": ["rust-coreutils"],
-    "Google Chrome": ["google-chrome-stable"],
-    "bazaar":["bazaar"]
+    "uutils": ["uutils-coreutils"],
+    "Google Chrome": ["google-chrome"],
+    "bazaar":["bazarr"]
 }
