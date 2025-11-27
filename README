@@ -6,3 +6,5 @@ Detects programs on your system that Lunduke wouldn't approve of.
 This is available under the GPL-3.0-or-later license.
 
 It is recommended to use PyPy with this program as Lunduke doesn't approve of the PSF/CPython.
+
+For command line arguments for Virtual Lunduke, use `./virtual-lunduke.py --help`
