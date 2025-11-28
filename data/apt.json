@@ -8,5 +8,5 @@
     "GNOME": ["gnome"],
     "uutils": ["rust-coreutils"],
     "Google Chrome": ["google-chrome-stable"],
-    "bazaar":["bazaar"]
+    "Bazaar": ["bazaar"]
 }

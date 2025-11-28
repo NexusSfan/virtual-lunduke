@@ -1,7 +1,7 @@
-"""Detection System for Pacman (by Xgui4)"""
+"""Detection System for Pacman"""
 
 # This file is a part of Virtual Lunduke.
-# Copyright (C) 2025 NexusSfan <nexussfan@duck.com>
+# Copyright (C) 2025 NexusSfan <nexussfan@duck.com>, [Xgui4](https://www.github.com/xgui4)
 
 # Virtual Lunduke is free software: you can redistribute it and/or modify
 # it under the terms of the GNU General Public License as published by
@@ -15,8 +15,6 @@
 
 # You should have received a copy of the GNU General Public License
 # along with Virtual Lunduke. If not, see <https://www.gnu.org/licenses/>.
-
-# Pacman (Arch) Support implemented by [xgui4](https://www.github.com/xgui4)
 
 from . import base
 

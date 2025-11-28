@@ -8,5 +8,5 @@
     "GNOME": ["gnome-shell"],
     "uutils": ["/usr/lib/cargo/bin/coreutils/arch"],
     "Google Chrome": ["google-chrome-stable"],
-    "bazaar":["bazarr"]
+    "bazaar": ["bazaar"]
 }

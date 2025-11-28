@@ -8,5 +8,5 @@
     "GNOME": ["gnome"],
     "uutils": ["uutils-coreutils"],
     "Google Chrome": ["google-chrome"],
-    "bazaar":["bazarr"]
+    "Bazaar": ["bazaar"]
 }

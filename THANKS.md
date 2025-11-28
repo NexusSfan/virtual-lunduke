@@ -1,11 +1,11 @@
-# Hall Of Fame
+# A very big thanks to:
 
 ## Contributors
 
 - [Xgui4](https://github.com/xgui4/) (idea)
-- [NexusSfan](https://code.nolog.cz/NexusSfan) (his software)
+- [NexusSfan](https://code.nolog.cz/NexusSfan) (main coder)
 
-## List of software without a code of conduct
+## Software without a Code of Conduct
 
 - GNU + Linux distros
   - [Devuan GNU/Linux](https://www.devuan.org/)
@@ -26,12 +26,12 @@
   - [lillydecomp](https://github.com/NexusSfan/lillydecomp)
   - [sarzaminget](https://code.nolog.cz/NexusSfan/sarzaminget)
   - [pyhangouts2](https://code.nolog.cz/NexusSfan/googlechatutils)
-  - [virtual-lunduke](https://github.com/NexusSfan/virtual-lunduke) and [my fork](https://github.com/xgui4/virtual-lunduke)
+  - [virtual-lunduke](https://github.com/NexusSfan/virtual-lunduke) and [this-fork](https://github.com/xgui4/virtual-lunduke)
 - Others
-  - [XLibre](https://github.com/x11Libre/xserver)
+  - [XLibre](https://github.com/X11Libre/xserver)
   - [AppImage](https://github.com/AppImage)
 
-## List of Software with not woke code of conduct or not weaponised CoC
+## Software without a weaponised Code of Conduct
 
 - Operating System
   - [FreeBSD](https://www.freebsd.org/)
@@ -42,6 +42,6 @@
 - Others
   - [Hyprland](https://github.com/hyprwm/hyprland)
   - [Ladybird Web Browser](https://github.com/LadybirdBrowser/ladybird)
-- [My own softwares](https://github.com/xgui4)
+- [Software by Xgui4](https://github.com/xgui4)
 
-### To be continued, you can suggest other or even your own at [xgui4/wokeness.md](https://gist.github.com/xgui4/3b096f26bef76e2b564ae9de6eb4077d)
+Also see [xgui4's list](https://gist.github.com/xgui4/3b096f26bef76e2b564ae9de6eb4077d)

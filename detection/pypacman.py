@@ -1,7 +1,7 @@
-"""Pacman Support for Python (by Xgui4)"""
+"""Pacman Support for Python"""
 
 # This file is a part of Virtual Lunduke.
-# Copyright (C) 2025 NexusSfan <nexussfan@duck.com>
+# Copyright (C) 2025 NexusSfan <nexussfan@duck.com>, [Xgui4](https://www.github.com/xgui4)
 
 # Virtual Lunduke is free software: you can redistribute it and/or modify
 # it under the terms of the GNU General Public License as published by
@@ -30,7 +30,7 @@ class Query:
         installed = self._package_installed(key)
         pkg = Package(installed=installed)
         return pkg
-    
+
     def _package_exists(self, package_name):
         result = subprocess.run(
             ["pacman", "-Ss", package_name],
@@ -43,7 +43,7 @@ class Query:
             return True
         return False
 
-    
+
     def _package_installed(self, package_name):
         try:
             # Run pacman -Q and capture output
@@ -51,11 +51,10 @@ class Query:
                 ['pacman', '-Q', package_name],
                 capture_output=True,
                 text=True,
-                check=True  # Raise CalledProcessError if pacman returns non-zero exit code
+                check=True # Raise CalledProcessError if pacman returns non-zero exit code
             )
             # If no error, the package is installed
             return True
         except subprocess.CalledProcessError:
             # If pacman returns an error (package not found), it's not installed
             return False
-

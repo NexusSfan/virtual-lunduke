@@ -21,7 +21,7 @@ import json
 import socket
 import detection
 
-__version__ = "0.0.0-xgui4-fork"
+__version__ = "0.0.0-1-xgui4fork"
 
 argv = sys.argv
 argv.pop(0)
