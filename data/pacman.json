@@ -8,5 +8,6 @@
     "GNOME": ["gnome"],
     "uutils": ["uutils-coreutils"],
     "Google Chrome": ["google-chrome"],
-    "Bazaar": ["bazaar"]
+    "Bazaar": ["bazaar"],
+    "Prism Launcher": ["prismlauncher-git", "prismlauncher-offline", "prismlauncher-offline-bin"]
 }
