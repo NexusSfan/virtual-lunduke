@@ -9,5 +9,5 @@
     "uutils": ["rust-coreutils"],
     "Google Chrome": ["google-chrome-stable"],
     "Bazaar": ["bazaar"],
-    "Prism Launcher": ["prism-launcher"]
+    "Prism Launcher": ["prismlauncher"]
 }

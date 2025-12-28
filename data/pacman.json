@@ -9,5 +9,5 @@
     "uutils": ["uutils-coreutils"],
     "Google Chrome": ["google-chrome"],
     "Bazaar": ["bazaar"],
-    "Prism Launcher": ["prismlauncher-git", "prismlauncher-offline", "prismlauncher-offline-bin"]
+    "Prism Launcher": ["prismlauncher", "prismlauncher-git", "prismlauncher-offline", "prismlauncher-offline-bin"]
 }
