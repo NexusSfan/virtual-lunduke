@@ -8,5 +8,6 @@
     "GNOME": ["gnome"],
     "uutils": ["rust-coreutils"],
     "Google Chrome": ["google-chrome-stable"],
-    "Bazaar": ["bazaar"]
+    "Bazaar": ["bazaar"],
+    "Prism Launcher": ["prismlauncher"]
 }

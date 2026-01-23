@@ -5,8 +5,9 @@
     "sudo-rs": "Rust",
     "systemd": "Red Hat/IBM",
     "KDE": "Will only support Wayland soon",
-    "GNOME": "Will only support Wayland soon",
+    "GNOME": "Controversial Code of Conduct",
     "uutils": "Rust",
-    "Google Chrome": "Proprietary garbage and is made by Google",
-    "Bazaar": "Politics in software"
+    "Google Chrome": "Proprietary and is made by Google",
+    "Bazaar": "Politics in software",
+    "Prism Launcher": "Politics in software"
 }
