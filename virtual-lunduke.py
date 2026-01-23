@@ -1,3 +1,5 @@
+#!/usr/bin/env python3
+
 """Virtual Lunduke: Detects programs on your system that Lunduke wouldn't approve of."""
 
 # This file is a part of Virtual Lunduke.
