@@ -9,5 +9,5 @@
     "uutils": ["/usr/lib/cargo/bin/coreutils/arch"],
     "Google Chrome": ["google-chrome-stable"],
     "Bazaar": ["DOESNOTEXIST"],
-    "Prism Launcher": ["DOESNOTEXIST"]
+    "Prism Launcher": ["prismlauncher"]
 }
