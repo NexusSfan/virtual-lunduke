@@ -26,7 +26,7 @@
   - [lillydecomp](https://github.com/NexusSfan/lillydecomp)
   - [sarzaminget](https://code.nolog.cz/NexusSfan/sarzaminget)
   - [pyhangouts2](https://code.nolog.cz/NexusSfan/googlechatutils)
-  - [virtual-lunduke](https://github.com/NexusSfan/virtual-lunduke) and [my fork](https://github.com/xgui4/virtual-lunduke)
+  - [virtual-lunduke](https://github.com/NexusSfan/virtual-lunduke) and [this-fork](https://github.com/xgui4/virtual-lunduke)
 - Others
   - [XLibre](https://github.com/X11Libre/xserver)
   - [AppImage](https://github.com/AppImage)
