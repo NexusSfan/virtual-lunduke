@@ -8,6 +8,6 @@
     "GNOME": ["gnome-shell"],
     "uutils": ["/usr/lib/cargo/bin/coreutils/arch"],
     "Google Chrome": ["google-chrome-stable"],
-    "bazaar": ["bazaar"],
+    "Bazaar": ["bazaar"],
     "Prism Launcher": ["PrismLauncher-Linux-x86_64.AppImage"]
 }
