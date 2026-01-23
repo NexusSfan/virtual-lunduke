@@ -16,4 +16,25 @@
 # You should have received a copy of the GNU General Public License
 # along with Virtual Lunduke. If not, see <https://www.gnu.org/licenses/>.
 
-# coming soon
+from . import base
+
+from . import pypkg as pkg
+
+
+class FreeBSDPkgDetectionSystem(base.DetectionSystem):
+    def __init__(self, data: str):
+        super().__init__(data)
+        self.cache = pkg.Search()
+
+    def check(self, app: str):
+        self.exists_or_exception(app)
+        packages = self.jsondata[app]
+        packagesinstalled = []
+        for package in packages:
+            pkg_info = self.cache.get(package)
+            if pkg_info:
+                if pkg_info.installed:
+                    packagesinstalled.append(package)
+        if packagesinstalled:
+            return packagesinstalled
+        return None

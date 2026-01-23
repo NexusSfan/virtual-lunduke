@@ -18,10 +18,8 @@
 
 from . import base
 
-try:
-    import pacman
-except ModuleNotFoundError:
-    from . import pypacman as pacman
+
+from . import pypacman as pacman
 
 
 class PacmanDetectionSystem(base.DetectionSystem):

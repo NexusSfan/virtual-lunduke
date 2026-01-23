@@ -1,13 +1,13 @@
 {
-    "Rust": ["rustc", "cargo", "rustup"],
+    "Rust": ["rust", "rustup-init"],
     "LibreWolf": ["librewolf"],
-    "Flatpak": ["flatpak"],
+    "Flatpak": ["DOESNOTEXIST"],
     "sudo-rs": ["sudo-rs"],
-    "systemd": ["systemctl"],
-    "KDE": ["startplasma-wayland"],
+    "systemd": ["linux-c7-systemd-libs", "linux-rl9-systemd-libs"],
+    "KDE": ["plasma6-kwin"],
     "GNOME": ["gnome-shell"],
-    "uutils": ["/usr/lib/cargo/bin/coreutils/arch"],
-    "Google Chrome": ["google-chrome-stable"],
+    "uutils": ["DOESNOTEXIST"],
+    "Google Chrome": ["linux-chrome"],
     "Bazaar": ["DOESNOTEXIST"],
     "Prism Launcher": ["prismlauncher"]
 }

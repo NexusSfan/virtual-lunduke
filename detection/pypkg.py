@@ -16,4 +16,44 @@
 # You should have received a copy of the GNU General Public License
 # along with Virtual Lunduke. If not, see <https://www.gnu.org/licenses/>.
 
-# comign soon
+import subprocess
+from dataclasses import dataclass
+
+
+@dataclass
+class Package:
+    installed: bool
+
+
+class Search:
+    def get(self, key):
+        if 'DOESNOTEXIST' in key:
+            return
+        if not self._package_exists(key):
+            return None
+        installed = self._package_installed(key)
+        pkg = Package(installed=installed)
+        return pkg
+
+    def _package_exists(self, package_name):
+        result = subprocess.run(
+            ["pkg", "search", package_name],
+            stdout=subprocess.PIPE,
+            stderr=subprocess.PIPE,
+            text=True,
+            check=True,
+        )
+        if package_name in result.stdout:
+            return True
+        return False
+
+    def _package_installed(self, package_name):
+        try:
+            output: bytes = subprocess.check_output(
+                ["pkg", "info", package_name], stderr=subprocess.STDOUT
+            )
+        except subprocess.CalledProcessError:
+            return False
+        if "Installed on" in output.decode():
+            return True
+        return False

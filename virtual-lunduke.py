@@ -17,9 +17,6 @@
 # You should have received a copy of the GNU General Public License
 # along with Virtual Lunduke. If not, see <https://www.gnu.org/licenses/>.
 
-from typing import Any, LiteralString
-
-
 import sys
 import json
 import socket
@@ -61,7 +58,7 @@ for argument in argv:
         print("Run `./virtual-lunduke.py --help` for arguments")
         sys.exit(1)
 
-def addition(lst: list, arg: str) -> list[Any]:
+def addition(lst: list, arg: str) -> list:
     if not lst:
         if not lst:
             lst.append(
@@ -78,7 +75,7 @@ def get_alt(app : str, packages: str, altssys) -> str:
         return ""
     alts: list = altssys[app]
     packages_len: int = len(packages)
-    spaces_len: int = 20 - packages_len
+    spaces_len: int = 25 - packages_len
     spaces: str = " " * spaces_len
 
     formatted_alt_str = ""
@@ -97,7 +94,7 @@ def get_notes(app: str, packages: str, notessys) -> str:
     spaces = " " * spaces_len
     return f"{spaces}{note}"
 
-def check_all(data: list, detectsys, notessys, altsdata) -> list[Any]:
+def check_all(data: list, detectsys, notessys, altsdata) -> list:
     total_results = []
     for program in data:
         if VERBOSE:
@@ -115,7 +112,7 @@ def check_all(data: list, detectsys, notessys, altsdata) -> list[Any]:
             total_results = addition(lst=total_results, arg=f"{program}{spaces}{results_str}{note}{alt}")
     if sys.implementation.name == "cpython":
         if NOTES_ENABLED or ALT_ENABLED:
-            total_results = addition(lst=total_results, arg="CPython             python3             Use PyPy")
+            total_results = addition(lst=total_results, arg="CPython             python3                  Use PyPy")
         else:
             total_results = addition(lst=total_results, arg="CPython             python3")
     if not total_results:
