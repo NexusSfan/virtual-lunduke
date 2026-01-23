@@ -16,42 +16,4 @@
 # You should have received a copy of the GNU General Public License
 # along with Virtual Lunduke. If not, see <https://www.gnu.org/licenses/>.
 
-import subprocess
-from dataclasses import dataclass
-
-
-@dataclass
-class Package:
-    installed: bool
-
-
-class Cache:
-    def get(self, key):
-        if not self._package_exists(key):
-            return None
-        installed = self._package_installed(key)
-        pkg = Package(installed=installed)
-        return pkg
-
-    def _package_exists(self, package_name):
-        result = subprocess.run(
-            ["apt-cache", "policy", package_name],
-            stdout=subprocess.PIPE,
-            stderr=subprocess.PIPE,
-            text=True,
-            check=True,
-        )
-        if "Installed:" in result.stdout or "Candidate:" in result.stdout:
-            return True
-        return False
-
-    def _package_installed(self, package_name):
-        try:
-            output = subprocess.check_output(
-                ["dpkg", "-s", package_name], stderr=subprocess.STDOUT
-            )
-        except subprocess.CalledProcessError:
-            return False
-        if "install ok installed" in output.decode():
-            return True
-        return False
+# comign soon

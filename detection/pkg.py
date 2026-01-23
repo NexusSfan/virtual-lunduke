@@ -16,24 +16,4 @@
 # You should have received a copy of the GNU General Public License
 # along with Virtual Lunduke. If not, see <https://www.gnu.org/licenses/>.
 
-from . import base
-
-try:
-    import pkg
-except ModuleNotFoundError:
-    from . import py-freebsd as pkg
-
-
-class AptDetectionSystem(base.DetectionSystem):
-    def __init__(self, data: str):
-        super().__init__(data)
-
-    def check(self, app: str):
-        self.exists_or_exception(app)
-        packages = self.jsondata[app]
-        packagesinstalled = []
-        for package in packages:
-            
-        if packagesinstalled:
-            return packagesinstalled
-        return None
+# coming soon
