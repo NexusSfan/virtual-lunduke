@@ -35,14 +35,14 @@ for argument in argv:
     if argument in ('--notes', '-n'):
         NOTES_ENABLED = True # is that supposed to be a constant or a variable ?   # pyright: ignore[reportConstantRedefinition]
     elif argument in ('--alternatives', '-a'):
-        ALT_ENABLED = True # is that supposed to be a constant or a variable ?  # pyright: ignore[reportConstantRedefinition]
+        ALT_ENABLED = True # is that supposed to be a constant or a variable ?
     elif argument in ('--list-apps', '-l'):
         print("Supported apps:")
         with open("data/apps.json", encoding="ascii", errors="ignore") as tempdata:
             print("\n".join(json.loads(tempdata.read())))
         sys.exit(0)
     elif argument in ('-v', '--verbose'):
-        VERBOSE = True # is that supposed to be a constant or a variable ?   # pyright: ignore[reportConstantRedefinition]
+        VERBOSE = True # is that supposed to be a constant or a variable ?
     elif argument in ('-h', '-?', '--help'):
         print(f"Virtual Lunduke {__version__}")
         print("Detects programs on your system that Lunduke wouldn't approve of.")
