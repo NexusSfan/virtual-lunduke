@@ -1,0 +1,13 @@
+{
+    "Rust": ["rustc", "cargo", "rustup"],
+    "LibreWolf": ["librewolf"],
+    "Flatpak": ["flatpak"],
+    "sudo-rs": ["sudo-rs"],
+    "systemd": ["systemctl"],
+    "KDE": ["startplasma-wayland"],
+    "GNOME": ["gnome-shell"],
+    "uutils": ["/usr/lib/cargo/bin/coreutils/arch"],
+    "Google Chrome": ["google-chrome-stable"],
+    "Bazaar": ["DOESNOTEXIST"],
+    "Prism Launcher": ["prismlauncher"]
+}

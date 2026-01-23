@@ -17,29 +17,32 @@
 # You should have received a copy of the GNU General Public License
 # along with Virtual Lunduke. If not, see <https://www.gnu.org/licenses/>.
 
+from typing import Any
+
+
 import sys
 import json
 import socket
 import detection
 
-__version__ = "0.0.0-1-xgui4fork"
+__version__ = "0.0.1-1-xgui4fork"
 
-argv = sys.argv
-argv.pop(0)
+argv: list[str] = sys.argv
+argv.pop(0) 
 
 NOTES_ENABLED = False
 VERBOSE = False
 
 for argument in argv:
     if argument in ('--notes', '-n'):
-        NOTES_ENABLED = True
+        NOTES_ENABLED = True # is that supposed to be a constant or a variable ?   # pyright: ignore[reportConstantRedefinition]
     elif argument in ('--list-apps', '-a'):
         print("Supported apps:")
         with open("data/apps.json", encoding="ascii", errors="ignore") as tempdata:
             print("\n".join(json.loads(tempdata.read())))
         sys.exit(0)
     elif argument in ('-v', '--verbose'):
-        VERBOSE = True
+        VERBOSE = True # is that supposed to be a constant or a variable ?   # pyright: ignore[reportConstantRedefinition]
     elif argument in ('-h', '-?', '--help'):
         print(f"Virtual Lunduke {__version__}")
         print("Detects programs on your system that Lunduke wouldn't approve of.")
@@ -54,7 +57,7 @@ for argument in argv:
         print("Run `./virtual-lunduke.py --help` for arguments")
         sys.exit(1)
 
-def addition(lst: list, arg: str):
+def addition(lst: list, arg: str) -> list[Any]:
     if not lst:
         if not lst:
             lst.append(
@@ -66,7 +69,7 @@ def addition(lst: list, arg: str):
         print(f"VERBOSE: Current output: {lst}")
     return lst
 
-def get_notes(app: str, packages: str, notessys):
+def get_notes(app: str, packages: str, notessys) -> str:
     if not NOTES_ENABLED:
         return ""
     note = notessys[app]
@@ -75,7 +78,7 @@ def get_notes(app: str, packages: str, notessys):
     spaces = " " * spaces_len
     return f"{spaces}{note}"
 
-def check_all(data: list, detectsys, notessys):
+def check_all(data: list, detectsys, notessys) -> list[Any]:
     total_results = []
     for program in data:
         if VERBOSE:
