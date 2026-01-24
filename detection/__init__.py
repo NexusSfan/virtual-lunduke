@@ -17,16 +17,17 @@
 # along with Virtual Lunduke. If not, see <https://www.gnu.org/licenses/>.
 
 import shutil
-from . import binary, apt, pacman
+from . import binary, apt, pacman, pkg
 
 
 def get_detection_system():
     apt_binary = shutil.which("apt")
     pacman_binary = shutil.which("pacman")
-    dnf_binary = shutil.which("dnf")
+    pkg_binary = shutil.which("pkg")
     if apt_binary:
         return (apt.AptDetectionSystem, "apt")
     if pacman_binary:
         return(pacman.PacmanDetectionSystem, "pacman")
-    # todo: implement dnf
+    if pkg_binary:
+        return(pkg.FreeBSDPkgDetectionSystem, "pkg")
     return (binary.BinDetectionSystem, "bin")

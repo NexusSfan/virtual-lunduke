@@ -1,4 +1,4 @@
-"""Detection System for Pacman"""
+"""Detection System for FreeBSD pkg"""
 
 # This file is a part of Virtual Lunduke.
 # Copyright (C) 2025 NexusSfan <nexussfan@duck.com>, [Xgui4](https://www.github.com/xgui4)
@@ -18,14 +18,13 @@
 
 from . import base
 
+from . import pypkg as pkg
 
-from . import pypacman as pacman
 
-
-class PacmanDetectionSystem(base.DetectionSystem):
+class FreeBSDPkgDetectionSystem(base.DetectionSystem):
     def __init__(self, data: str):
         super().__init__(data)
-        self.cache = pacman.Query()
+        self.cache = pkg.Search()
 
     def check(self, app: str):
         self.exists_or_exception(app)

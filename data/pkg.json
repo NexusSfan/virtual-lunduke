@@ -1,0 +1,13 @@
+{
+    "Rust": ["rust", "rustup-init"],
+    "LibreWolf": ["librewolf"],
+    "Flatpak": ["DOESNOTEXIST"],
+    "sudo-rs": ["sudo-rs"],
+    "systemd": ["linux-c7-systemd-libs", "linux-rl9-systemd-libs"],
+    "KDE": ["plasma6-kwin"],
+    "GNOME": ["gnome-shell"],
+    "uutils": ["DOESNOTEXIST"],
+    "Google Chrome": ["linux-chrome"],
+    "Bazaar": ["DOESNOTEXIST"],
+    "Prism Launcher": ["prismlauncher"]
+}
